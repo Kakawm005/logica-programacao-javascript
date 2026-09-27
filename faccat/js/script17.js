@@ -1,12 +1,11 @@
-//17) Ler as notas da 1a. e 2a. avaliações de um aluno. Calcular a média aritmética simples e escrever 
-//uma mensagem que diga se o aluno foi ou não aprovado (considerar que nota igual ou maior que 6 o 
-//aluno é aprovado). Escrever também a média calculada. 
+//21) Ler a hora de início e a hora de fim de um jogo de Xadrez (considere apenas horas inteiras, sem os 
+//minutos) e calcule a duração do jogo em horas, sabendo-se que o tempo máximo de duração do jogo é 
+//de 24 horas e que o jogo pode iniciar em um dia e terminar no dia seguinte.
 
-nota1 = parseFloat(prompt("Digite a nota 1: "))
-nota2 = parseFloat(prompt("Digite a nota 2: "))
+inicio_jogo_xadrez = parseFloat(prompt("Digite o inicio do jogo de xadrez: "))
+fim_jogo_xadrez = parseFloat(prompt("Digite o fim do jogo de xadrez: "))
 
-media = (nota1 + nota2) / 2
-
-alert("A média das notas foi de: " + media)
-
-if (media >= 6) {alert("Aluno Aprovado!")}else{alert("Aluno reprovado")}
+if (inicio_jogo_xadrez > fim_jogo_xadrez) {
+    total_horas_jogo = fim_jogo_xadrez - inicio_jogo_xadrez + 24
+}
+alert(total_horas_jogo)
